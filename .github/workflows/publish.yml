@@ -35,5 +35,3 @@ jobs:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
           DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
           DOCKERHUB_REPOSITORY: wortel538/openai-whisper
-
-          docker run --rm -name whisper -v ${PWD}:/data wortel538/openai-whisper whisper audio.wav
